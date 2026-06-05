@@ -121,6 +121,8 @@ Built a four-panel interactive Tableau Public dashboard covering shipping mode p
 ---
 
 ## Repository Structure
+
+```
 supply-chain-performance-analysis/
 ├── README.md
 ├── data/
@@ -134,15 +136,16 @@ supply-chain-performance-analysis/
 │   ├── chart4_delivery_gap.png
 │   └── chart5_model_results.png
 └── sql/
-└── analysis_queries.sql
-
+    └── analysis_queries.sql
+```
 ---
 
 ## About
 
-**Phu Qui (Will) Dang**
-Supply Chain and Data Analytics Graduate
+**Phu Qui (Will) Dang** - Supply Chain and Data Analytics Graduate
+
 Bachelor of Business (Logistics and Supply Chain Management) — Swinburne University
+
 Master of Business Analytics (Data Science) — La Trobe University
 
 [LinkedIn](https://linkedin.com/in/phuquidang) | [Tableau Public](https://public.tableau.com/app/profile/phu.qui.dang) | [GitHub](https://github.com/dangquii)
