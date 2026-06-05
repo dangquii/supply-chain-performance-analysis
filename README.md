@@ -10,7 +10,7 @@
 
 ## Business Problem
 
-More than half of all orders in this supply chain are delivered late — yet the business continues to offer delivery windows that operations cannot reliably meet. This project investigates where delivery failures occur, which shipping modes and markets are most affected, and what the financial cost of late deliveries is to the business.
+More than half of all orders in this supply chain are delivered late, yet the business continues to offer delivery windows that operations cannot reliably meet. This project investigates where delivery failures occur, which shipping modes and markets are most affected, and what the financial cost of late deliveries is to the business.
 
 The analysis answers three core business questions:
 1. Which shipping modes and product categories carry the highest late delivery rate, and what is the financial impact?
@@ -22,10 +22,10 @@ The analysis answers three core business questions:
 ## Key Findings
 
 **Finding 1: First Class shipping carries a 95.3% late delivery rate**
-First Class — the most expensive delivery option — has the highest late delivery rate across all shipping modes, driven by an unrealistic 1-day scheduled window. Customers paying a premium for speed receive the worst delivery experience, directly undermining customer trust and brand reputation.
+First Class, the most expensive delivery option, has the highest late delivery rate across all shipping modes, driven by an unrealistic 1-day scheduled window. Customers paying a premium for speed receive the worst delivery experience, directly undermining customer trust and brand reputation.
 
 **Finding 2: Late delivery is a systemic issue, not a regional one**
-Late delivery rates are consistent across all five global markets, ranging from 54.3% to 55.2%. No single market is underperforming — the entire supply chain scheduling process requires review.
+Late delivery rates are consistent across all five global markets, ranging from 54.3% to 55.2%. No single market is underperforming, the entire supply chain scheduling process requires review.
 
 **Finding 3: Late deliveries cost the business approximately $77,000 in avoidable profit loss**
 Late deliveries generate $0.78 less profit per order compared to on-time deliveries. With 98,977 late orders recorded, this represents approximately $77,000 in profit that could be recovered through improved scheduling accuracy.
@@ -41,7 +41,7 @@ Extend the First Class scheduled delivery window from 1 day to a minimum of 2 to
 Commission a full review of delivery scheduling processes across all shipping modes and markets. Given that late delivery rates are consistent across all five global markets, the root cause is systemic rather than regional.
 
 **Recommendation 3: Implement a profit recovery program**
-Prioritise operational improvements beginning with Standard Class — the highest volume mode at 107,752 orders. Each percentage point improvement in on-time delivery rate recovers approximately $770 in profit annually.
+Prioritise operational improvements beginning with Standard Class, the highest volume mode at 107,752 orders. Each percentage point improvement in on-time delivery rate recovers approximately $770 in profit annually.
 
 ---
 
@@ -70,7 +70,7 @@ Reviewed 180,519 transaction records across 53 columns. Identified key data qual
 Loaded clean data into SQLite database and executed structured queries to answer each business question. Key queries covered late delivery rate by shipping mode, revenue and profit by market, and delivery gap patterns by shipping mode and scheduled days.
 
 ### Phase 4 — Exploratory Data Analysis
-Conducted univariate and bivariate analysis across all key variables. Identified the counterintuitive finding that First Class — the premium shipping option — carries the highest late delivery rate due to unrealistic scheduling windows. Confirmed that late delivery patterns are systemic rather than regional through market-level analysis.
+Conducted univariate and bivariate analysis across all key variables. Identified the counterintuitive finding that First Class, the premium shipping option, carries the highest late delivery rate due to unrealistic scheduling windows. Confirmed that late delivery patterns are systemic rather than regional through market-level analysis.
 
 ### Phase 5 — Predictive Modelling
 Trained and compared two classification models to predict late delivery risk:
@@ -82,7 +82,7 @@ Trained and compared two classification models to predict late delivery risk:
 
 Random Forest selected as final model. Top predictive features: delivery gap, actual shipping days, scheduled shipping days, and shipping mode.
 
-**Note on model limitations:** The top two features — delivery gap and actual shipping days — are only known after delivery. In a production environment, the model should be retrained using only pre-shipment features such as shipping mode and scheduled days.
+**Note on model limitations:** The top two features — delivery gap and actual shipping days, are only known after delivery. In a production environment, the model should be retrained using only pre-shipment features such as shipping mode and scheduled days.
 
 ### Phase 6 — Dashboard
 Built a four-panel interactive Tableau Public dashboard covering shipping mode performance, market revenue versus late rate, delivery gap distribution, and financial impact analysis. Dashboard includes three KPI cards showing overall late rate, First Class late rate, and total late orders.
