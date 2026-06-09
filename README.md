@@ -179,6 +179,28 @@ supply-chain-performance-analysis/
 ```
 
 ---
+## Reflections and Limitations
+
+This analysis revealed that delivery scheduling windows are the primary 
+driver of late delivery performance, not operational execution or 
+regional factors. The most counterintuitive finding was that the premium 
+shipping option performs worst, suggesting that customer expectations are 
+being set by marketing rather than informed by operational capacity.
+
+The predictive model achieves 97% accuracy, but this figure should be 
+interpreted with caution. The two most important features, delivery gap 
+and actual shipping days, are only available after delivery has occurred. 
+A production model using only pre-shipment features would likely achieve 
+lower accuracy but provide genuinely predictive value for operations 
+teams. This distinction between analytical insight and operational 
+prediction is critical for real-world deployment.
+
+If I were to extend this analysis, I would incorporate customer 
+satisfaction data to quantify the relationship between late delivery 
+and customer retention, and build a pre-shipment-only model to test 
+realistic prediction accuracy.
+
+---
 
 ## About
 
